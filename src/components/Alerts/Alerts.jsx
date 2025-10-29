@@ -1,5 +1,4 @@
 import React from "react";
-import "./Alerts.css"; // tu później dodamy własny CSS
 
 export default function Alerts() {
   const alerts = [

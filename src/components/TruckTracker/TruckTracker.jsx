@@ -1,5 +1,4 @@
 import React from "react";
-import "./TruckTracker.css";
 
 export default function TruckTracker() {
   const tiry = [
