@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function TruckTracker() {
   const tiry = [
     {
@@ -34,27 +35,27 @@ export default function TruckTracker() {
     },
   ];
 
-  const getStanClass = (stan) => {
+  const getStanClass = (stan: string) => {
     if (stan === "OK") return "stan-ok";
     if (stan === "Blisko limitu") return "stan-warning";
     return "stan-danger";
   };
 
   return (
-    <div className="tracker-container">
-      <div className="tracker-card">
+    <div className="flex justify-center">
+      <div>
         {/* Header */}
-        <div className="tracker-header">
-          <h2>Truck Tracker</h2>
+        <div>
+          <h2 className="text-4xl font-bold">Truck Tracker</h2>
           <p>Monitorowanie floty ciężarówek</p>
         </div>
 
         {/* Lista tirów */}
-        <div className="tracker-list">
+        <div>
           {tiry.map((tir) => (
-            <div key={tir.id} className="tracker-item">
-              <h3 className="tir-marka">🚛 {tir.marka}</h3>
-              <p className="tir-nr">Nr rejestracyjny: {tir.nr}</p>
+            <div key={tir.id}>
+              <h3>🚛 {tir.marka}</h3>
+              <p>Nr rejestracyjny: {tir.nr}</p>
 
               <div className="tir-details">
                 <p>
