@@ -4,7 +4,7 @@ import { AlertTriangle } from "lucide-react"
 export default function Alerts() {
     return (
         <section>
-            <h2 className="text-4xl font-bold mb-2">Alerty</h2>
+            <h2 className="mb-4 text-2xl font-bold text-[oklch(0.985 0 0)]">Alerty</h2>
                 <div className="space-y-3">
                     <Alert variant="destructive" className="border-[#b21e35] h-20">
                     <AlertTriangle className="size-[20px]" stroke="#b21e35" />

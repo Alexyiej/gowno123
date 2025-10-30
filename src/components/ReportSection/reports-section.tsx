@@ -20,11 +20,11 @@ const driverChangesData = [
 export function ReportsSection() {
   return (
     <section>
-      <h2 className="text-4xl font-bold mb-2">Raporty</h2>
+      <h2 className="mb-4 text-2xl font-bold text-[oklch(0.985 0 0)]">Raporty</h2>
       <div className="space-y-4">
         <Card className="bg-card border-border">
           <CardHeader>
-            <CardTitle className="text-foreground">Przekroczone kilometry</CardTitle>
+            <CardTitle className="font-bold text-xl">Przekroczone kilometry</CardTitle>
             <CardDescription className="text-muted-foreground">
               Miesięczne przekroczenia planowanych kilometrów
             </CardDescription>
@@ -44,7 +44,7 @@ export function ReportsSection() {
 
         <Card className="bg-card border-border">
           <CardHeader>
-            <CardTitle className="text-foreground">Liczba zmian kierowców</CardTitle>
+            <CardTitle className="font-bold text-xl">Liczba zmian kierowców</CardTitle>
             <CardDescription className="text-muted-foreground">
               Miesięczna liczba zmian przypisań kierowców
             </CardDescription>
