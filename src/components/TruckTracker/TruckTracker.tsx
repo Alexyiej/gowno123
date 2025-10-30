@@ -42,16 +42,18 @@ export default function TruckTracker() {
   };
 
   return (
-    <div className="flex justify-center">
+    <div className="bg-[#ffe3e0] rounded-3xl h-75">
       <div>
         {/* Header */}
         <div>
-          <h2 className="text-4xl font-bold">Truck Tracker</h2>
-          <p>Monitorowanie floty ciężarówek</p>
+          <h2 className="text-4xl font-bold p-3">Truck Tracker</h2>
+        </div>
+        <div className="ml-3">
+          <button className="bg-[#fafafa] w-30 h-10 rounded-xl border hover:font-bold">ID 123456</button>
         </div>
 
         {/* Lista tirów */}
-        <div>
+        <div className="flex flex-col">
           {tiry.map((tir) => (
             <div key={tir.id}>
               <h3>🚛 {tir.marka}</h3>

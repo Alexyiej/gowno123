@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { MdOutlineDashboard } from "react-icons/md";
+import { LiaCarSideSolid } from "react-icons/lia";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -8,13 +10,18 @@ type LayoutProps = {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="flex min-h-screen">
-      <aside className="bg-gradient-to-r from-[#FF0000]/75 to-[#BD0303]/75 w-60 p-4 text-white">
-        <h2>LSP</h2>
+      <aside className="flex flex-col gap-6 bg-gradient-to-b from-[#FF0000] to-[#BD0303] w-60 p-4 text-white">
+        <h2 className="text-3xl font-bold">LSP</h2>
         <nav>
-          <ul>
-            <li><Link to="/kpi">Kpi</Link></li>
-            <li><Link to="/alerts">Alerts</Link></li>
-            <li><Link to="/trucktracker">Truck Tracker</Link></li>
+          <ul className="flex flex-col gap-2">
+            <li className="flex items-center gap-3 text-2xl">
+              <MdOutlineDashboard />
+              <Link to="/dashboard">Dashboard</Link>
+            </li>
+            <li className="flex items-center gap-3 text-2xl">
+              <LiaCarSideSolid />
+              <Link to="/cars">Cars</Link>
+            </li>
           </ul>
         </nav>
       </aside>
